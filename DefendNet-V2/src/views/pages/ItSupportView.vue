@@ -1,0 +1,72 @@
+<template>
+  <div>
+    <!-- ✅ Hero Section -->
+    <Hero
+      :heroImage="office"
+      title="Cyber"
+      titleClass="text-white font-bold text-4xl"
+      titleChild="Navigating Financial Success Together"
+      childClass="text-white font-light text-2xl  leading-relaxed"
+      heroClass=" md:h-[70vh] min-w-screen overflow-hidden object-cover object-top "
+      context="text-center flex flex-col item-center justify-center mx-auto h-64 md:h-99"
+    >
+      <Navbar />
+      <div class="border-b border-slate-100"></div>
+    </Hero>
+
+    <!-- ✅ Content Section -->
+    <div
+      id="go"
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-12 py-10 space-y-10 md:space-y-0 md:space-x-10"
+    >
+      <!-- 🖼️ Left Image -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          :src="changeSupport"
+          alt="Cyber-security"
+          class="w-full h-auto sm:h-80 md:h-auto lg:h-[500px] object-cover rounded-lg shadow-md"
+        />
+      </div>
+
+      <!-- 📝 Right Text -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h1 class="text-2xl sm:text-3xl lg:text-xl text-center font-bold mb-4 dark:text-white">
+          Keeping Your Systems Running—Securely and Seamlessly
+        </h1>
+        <p class="text-base sm:text-lg lg:text-xl mb-4 dark:text-white leading-relaxed">
+          At DefendNet, our IT Support & Operational Readiness services ensure your technology
+          environment is not only functional but fully prepared to support business growth,
+          resilience, and continuity. We provide end-to-end support that keeps your operations
+          efficient and secure—day in and day out
+        </p>
+        <h2 class="text-lg sm:text-xl font-semibold mb-3 dark:text-white">Our services include:</h2>
+        <ul
+          v-for="supportList in supportLists"
+          class="list-disc list-inside space-y-2 text-left mx-auto md:mx-0"
+        >
+          <li>{{ supportList.list }}</li>
+        </ul>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</template>
+<script setup>
+import Navbar from '@/components/Layouts/Navbar.vue'
+import Hero from '@/components/Layouts/Hero.vue'
+import office from '@/assets/office.jpg'
+import changeSupport from '@/assets/changeSupport.jpg'
+import Footer from '@/components/Layouts/Footer.vue'
+
+const supportLists = [
+  {
+    list: '24/7 technical support and issue resolution.',
+  },
+  {
+    list: 'System performance monitoring and optimization',
+  },
+  {
+    list: 'Readiness assessments for incident response and disaster recovery',
+  },
+]
+</script>

@@ -5,6 +5,7 @@ import Navbar from "@/components/Layouts/Navbar.vue";
 import aboutCard from "@/ui/aboutCard.vue";
 import serviceIntroBanner from "@/ui/serviceIntroBanner.vue";
 import card from "@/ui/card.vue";
+import time from "@/assets/time.jpg";
 import Footer from "@/components/Layouts/Footer.vue";
 import makeSection from "@/ui/makeSection.vue"
 
@@ -25,7 +26,7 @@ const plans = [
       :heroImage="heroPhoto"
       title="Welcome to DefendNet"
       titleChild="Elevate Your Business with Our Accountants"
-      subChild="Lorem ipsum dolor sit amet consectetur adipiscing elit aptent tristique turpis,porttitor suscipit. At eros facilisi tempor felis sociosqu mattis porta tincidunt quisqu."
+      subChild="A trusted partner in IT compliance and auditing—helping organizations meet regulatory standards, enhance cybersecurity, and stay audit-ready through expert-led solutions."
       titleClass="text-[#0BC575]"
       childClass=" text-[20px]  md:text-[40px] text-center max-w-90 break-words font-bold text-white"
       SubchildClass="text-white w-99 text-center"
@@ -68,7 +69,7 @@ const plans = [
       </section>
      <aboutCard/>
       <div class="flex flex-col justify-center items-center mt-10">
-          <h1 class="text-[#206695] py-2 font-semibold">Our Services</h1>
+          <!-- <h1 class="text-[#206695] py-2 font-semibold">Our Services</h1>
           <h2 class="font-bold text-3xl py-4 text-center md:w-[400px]">
             Accounting by the Book. Perform with Trust.
           </h2>
@@ -79,10 +80,10 @@ const plans = [
           <div
             class="bg-[#0BC575] h-[4px] md:h-1 my-4 rounded"
             style="width: 48px"
-          ></div>
+          ></div> -->
         </div>
-        <card/>
-     <makeSection image="time"/> 
+        <!-- <card/> -->
+     <makeSection image="time" :heroImage="time"/> 
      <serviceIntroBanner/>
      <Footer/>
     </main>

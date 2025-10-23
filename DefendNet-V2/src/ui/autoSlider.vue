@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[url('@/assets/background.png')] bg-cover bg-center min-h-screen ">
+  <div class="bg-[url('@/assets/background.png')] bg-cover bg-center min-h-64 ">
     <container>
       <div class="text-center flex flex-col justify-center items-center py-[100px]">
         <h1 class="text-[#206695] text-">Testimonial</h1>

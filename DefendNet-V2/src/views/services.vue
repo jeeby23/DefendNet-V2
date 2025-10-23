@@ -30,7 +30,7 @@
         ></div>
       </div>
       <card/>
-      <makeSection :image="focused" heroClass="object-top h-[60vh] w-full object-cover" />
+      <makeSection :heroImage="servicesAudit" heroClass="object-top h-[60vh] w-full object-cover" />
       <autoSlider/>
       <div>
         <serviceIntroBanner/>
@@ -44,6 +44,7 @@
 import card from "@/ui/card.vue";
 import autoSlider from "@/ui/autoSlider.vue";
 import serviceHero from "@/assets/serviceHero.jpg";
+import servicesAudit from "@/assets/servicesAudit.jpg";
 import Hero from "@/components/Layouts/Hero.vue";
 import Navbar from "@/components/Layouts/Navbar.vue";
 import makeSection from "@/ui/makeSection.vue";

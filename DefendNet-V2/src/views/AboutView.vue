@@ -9,11 +9,11 @@
       heroClass=" md:h-[70vh] min-w-screen overflow-hidden object-cover object-top "
       context="text-center flex flex-col item-center justify-center mx-auto h-64 md:h-99"
     >
-      <Navbar />
+      <Navbar/>
       <div class="border-b-[.5px] border-slate-100"></div>
     </Hero>
     <aboutCard/>
-    <makeSection  :image="time" heroClass="object-top h-[60vh] w-full object-cover"/>
+    <makeSection  :heroImage="businesAbout" heroClass="object-top h-[60vh] w-full object-cover" titleChild="Elevate your business with accounting services designed just for you." subChild="Our expert auditing and accounting solutions are tailored to meet your unique business needs. We go beyond the numbers to deliver clear insights, ensure compliance, and strengthen your financial foundation so you can focus on growth with confidence."/>
     <div class="bg-[#FAFAFA]">
       <div class="flex flex-col justify-center items-center pt-10">
         <h1 class="text-[#206695] py-2 font-semibold">
@@ -59,8 +59,9 @@ import container from "@/components/Layouts/container.vue";
 import Hero from "@/components/Layouts/Hero.vue";
 import Navbar from "@/components/Layouts/Navbar.vue";
 import aboutHero from "@/assets/aboutHero.jpg";
-import time from "@/assets/time.jpg";
 import aboutCard from "@/ui/aboutCard.vue";
+
+import businesAbout from "@/assets/busines-about.jpg";
 import makeSection from "@/ui/makeSection.vue";
 import Ceo from "@/assets/Ceo.png";
 import projectManager from "@/assets/projectManager.png";

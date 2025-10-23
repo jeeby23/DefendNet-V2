@@ -85,19 +85,19 @@ const contactDetails = [
   {
     id: 1,
     title: "Chat To Support",
-    content: "support@yourdomain.tld",
+    content: "peoplesteam@defendnettechnology.com",
     icon: ["fas", "comment-dots"],
   },
   {
     id: 2,
     title: "Call Us",
-    content: "Call : (622) 2002.2012",
+    content: "Call : +4407349146384",
     icon: ["fas", "phone"],
   },
   {
     id: 2,
     title: "Visit Us",
-    content: "Jalan Cempaka Wangi No 22 Jakarta - Indonesia",
+    content: "Address: 20 Northwood Drive BT15 3QP",
     icon: ["fas", "map-marker-alt"],
   },
 ];

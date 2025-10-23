@@ -14,9 +14,7 @@
                 Unraveling Financial Potential, Tailored Just for You
               </h2>
               <p class="my-4 text-gray-400 md:w-[500px]">
-                Tristique auctor hac mus himenaeos vivamus ullamcorper purus
-                suscipit, at tellus sociis quisque odio scelerisque curae mattis
-                velit, senectus egestas penatibus vehicula arcu praesent vitae.
+              We go beyond numbers to uncover opportunities that drive growth. Our expert auditing and financial advisory services are customized to meet your unique business needs, ensuring clarity, compliance, and strategic success at every step.
               </p>
               <div v-for="(choose, index) in chooses" :key="index">
                 <span>
@@ -54,29 +52,29 @@ defineExpose({ FontAwesomeIcon });
 const chooses = [
   {
     id: 1,
-    text: "Tax Expertise",
+    text: "Aduiting",
     child:
-      "Quam semper duis finibus donec fringilla nam luctus aenean nisl montes tristique",
+      "Evaluating data security, system integrity, and access management",
     icon: "calculator",
   },
   {
     id: 2,
-    text: "Cost Efficiency",
+    text: "Business",
     icon: "chart-line",
     child:
-      "Quam semper duis finibus donec fringilla nam luctus aenean nisl montes tristique",
+      "Develop customized business continuity plans (BCPs) that align with your organizational structure and critical operations",
   },
   {
     id: 3,
-    text: "Audit Readiness",
+    text: "Cloud",
     icon: "globe",
-    child: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    child: "Cloud architecture assessments and security posture reviews",
   },
   {
     id: 4,
-    text: "Time Savings",
+    text: "Cyber",
     icon: "globe",
-    child: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    child: "Comprehensive Risk Assessments Identify critical vulnerabilities, prioritize risks, and implement safeguards",
   },
 ];
 </script>

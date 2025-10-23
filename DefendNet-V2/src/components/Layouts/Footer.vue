@@ -1,110 +1,122 @@
 <template>
   <div>
-    <section>
-      <div
-        class="flex flex-col-reverse md:flex-row items-center justify-center gap-6 px-6 pt-[100px]"
-      >
-        <div class="text-center md:w-1/3">
-          <h1 class="font-mono font-extrabold text-[20px]">
-            Let secure Your business Togther
-          </h1>
-          <button
-            class="mb-10 bg-blue-400 hover:bg-blue-800 py-3 px-9 rounded-full text-white font-semibold mt-2"
-          >
-            Road to success
-          </button>
-        </div>
-        <div class="">
-          <img :src="woman" alt="woman image" />
-        </div>
-        <div class="text-center md:w-1/3">
-          <h1 class="font-mono font-extrabold text-[20px]">
-            Have any questions ?
-          </h1>
-          <p class="text-[23px] text-indigo-500 font-mono">{{ phoneNumber }}</p>
-        </div>
+    <!-- ✅ Top Section -->
+    <section class="px-4 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
+      <!-- Left Column -->
+      <div class="text-center lg:text-left lg:w-1/3 space-y-3">
+        <h1 class="font-mono font-extrabold text-xl sm:text-xl lg:text-2xl leading-snug">
+          Let's Secure Your Business Together
+        </h1>
+        <button
+          class="bg-blue-500 hover:bg-blue-800 py-3 px-8 rounded-full text-white font-semibold transition"
+        >
+          Road to Success
+        </button>
+      </div>
+
+      <!-- Center Image -->
+      <div class="flex justify-center lg:w-1/3">
+        <img
+          :src="woman"
+          alt="woman image"
+          class="w-full max-w-[250px] sm:max-w-[350px] lg:max-w-[400px] object-contain"
+        />
+      </div>
+
+      <!-- Right Column -->
+      <div class="text-center lg:text-right lg:w-1/3 space-y-2">
+        <h1 class="font-mono font-extrabold text-xl sm:text-2xl lg:text-3xl">
+          Have any questions?
+        </h1>
+        <p class="text-lg sm:text-xl lg:text-2xl text-indigo-500 font-mono">
+         +4407349146384
+        </p>
       </div>
     </section>
-    <footer class="bg-[#206695] min-h-auto relative overflow-hidden">
-      <section>
-        <container>
-          <div class="md:flex pt-[50px] md:pt-[60px]">
-            <div>
-              <span>
-                <img class="w-32 pl-5 " :src="defLogo" alt="logo"
-              /></span>
-              <div class="text-gray-400 w-full md:max-w-[70%] pb-5">
-                4200 Hamill Avenue, San Diego, California 92109.
-              </div>
-            </div>
-            <div>
-              <div>
-                <ul
-                  class="grid grid-cols-2 md:grid-cols-4 space-x-0 md:space-x-10 text-white font-bold"
-                >
-                  <li v-for="(section, index) in footerSections" :key="index">
-                    <h3 class="text-lg font-bold mb-2 text-white">
-                      {{ section.title }}
-                    </h3>
-                    <ul>
-                      <li
-                        v-for="(link, linkIndex) in section.links"
-                        :key="linkIndex"
-                        class="text-sm  transition-colors duration-300 py-2 text-gray-400 font-light"
-                      >
-                        <div>
-                          <span v-if="link.icon">
-                            <FontAwesomeIcon
-                              :icon="link.icon"
-                              class="text-gray-400 px-2"
-                            />
-                          </span>
-                          <router-link :to="link.url">{{
-                            link.text
-                          }}</router-link>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+
+    <!-- ✅ Footer Section -->
+    <footer class="bg-[#206695] text-white">
+      <section class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Top Footer Content -->
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+          <!-- Logo & Address -->
+          <div class="md:w-1/3 space-y-3  md:text-left">
+            <img class="w-32  md:mx-0" :src="defLogo" alt="logo" />
+            <div class="text-gray-300 text-sm leading-relaxed">
+              Address: 20 Northwood Drive BT15 3QP
             </div>
           </div>
-        </container>
-        <container>
-            <hr class="text-gray-300 mt-5">
-            <div class="flex justify-center items-center min-h-[100px]">
-              <span class=" text-white text-center"> © Copyright 2025 DefendNet </span>
-      
-            </div>
-        </container>
+          <!-- Footer Links -->
+          <div class="flex-1">
+            <ul
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-sm  md:text-left"
+            >
+              <li v-for="(section, index) in footerSections" :key="index">
+                <h3 class="text-base font-bold mb-2">{{ section.title }}</h3>
+                <ul>
+                  <li
+                    v-for="(link, linkIndex) in section.links"
+                    :key="linkIndex"
+                    class="py-1 text-gray-300 hover:text-white transition"
+                  >
+                    <!-- ✅ handle tel/mailto differently -->
+                    <template
+                      v-if="link.url.startsWith('http') || link.url.startsWith('mailto:') || link.url.startsWith('tel:')"
+                    >
+                      <a :href="link.url">{{ link.text }}</a>
+                    </template>
+                    <template v-else>
+                      <router-link :to="link.url">{{ link.text }}</router-link>
+                    </template>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-gray-400 my-6" />
+
+        <!-- Bottom Footer -->
+        <div class="flex justify-center items-center text-center text-sm text-gray-200">
+          © Copyright 2025 DefendNet. All rights reserved.
+        </div>
       </section>
     </footer>
   </div>
 </template>
 
 <script setup>
-const phoneNumber = "+4407349146384";
-import container from "@/components/Layouts/container.vue"
+const phoneNumber = [
+  {
+    url: "+4407349146384",
+    text:"+4407349146384"
+  }
+];
 import woman from "@/assets/woman.png";
 import defLogo from "@/assets/defLogo.png";
+
 const footerSections = [
   {
-    title: "Company",
+    title: "Services",
     links: [
-      { text: "About", url: "/about" },
-      { text: "We are hiring", url: "/careers" },
-      { text: "Affilliate Program", url: "/careers" },
-      { text: "Business Accounts", url: "/careers" },
+      { text: "Audit", url: "/audit" },
+      { text: "Cloud", url: "/cloud-security" },
+      { text: "Cyber Security", url: "/cybersecurity" },
+      { text: "Policy", url: "/policy-development" },
+      { text: "SOX", url: "/sox-compliance" },
+      { text: "IT Support", url: "/it-support" },
+      { text: "Third-Party", url: "/third-party-risk" },
+      { text: "Business", url: "/business-continuity" },
     ],
   },
   {
     title: "Help",
     links: [
-      { text: "Email Us", url: "/contact" },
-      { text: "Help & FAQ", url: "/help" },
-      { text: "Make a return", url: "/help" },
-      { text: "Shipping Policy", url: "/help" },
+      { text: "Email Us", url: "mailto:Info@defendnettechnology.com" },
+      { text: "Call Us", url: "tel:+4407349146384" },
+     
     ],
   },
   {
@@ -119,13 +131,8 @@ const footerSections = [
   {
     title: "Contact",
     links: [
-      { text: "+1-202-555-0116", url: "tel:+12025550116" },
-      {
-        text: "Phello@wecooked.io",
-        url: "mailto:Phello@wecooked.io",
-        // icon: faEnvelope,
-        // icon: faPhone
-      },
+      { text: "+4407349146384", url: "tel:+4407349146384" },
+      { text: "Info@defendnettechnology.com", url: "mailto:Info@defendnettechnology.com" },
     ],
   },
 ];

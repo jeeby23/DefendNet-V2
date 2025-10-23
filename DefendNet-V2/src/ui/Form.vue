@@ -33,7 +33,11 @@
             <Textarea label="Message" placeholder="Message" class="" />
           </div>
         </div>
+        <div>
+        <Basebutton label="Send Message" class="text-white bg-black p-3 w-full  rounded"/>
       </div>
+      </div>
+      
     </form>
    
   </div>
@@ -41,6 +45,7 @@
 
 <script setup>
 import BaseInput from "@/ui/Input.vue";
+import Basebutton from "@/ui/button.vue";
 import Textarea from "@/ui/Textarea.vue";
 </script>
 

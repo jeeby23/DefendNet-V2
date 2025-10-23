@@ -1,34 +1,39 @@
 <template>
   <section class="mt-10">
-        <Hero
-          :heroImage="image"
-          :heroClass="heroClass"
-          titleChild="Make your business stand out with our personalized accounting services."
-          subChild="Mauris leo eleifend adipiscing inceptos finibus faucibus sem dolor hendrerit posuere augue. Morbi est torquent himenaeos scelerisque sed."
-          Buttonlabel="Discover More"
-          buttonClass="text-white bg-[#206695] p-3 mt-3 md:mr-3 rounded min-w-auto "
-          childClass=" text-[20px] md:text-[40px] text-center md:w-[700px] break-words font-bold text-white"
-          SubchildClass="text-white md:w-[550px] text-center"
-        >
-        </Hero>
-       
-      </section>
+    <Hero
+    :heroImage="heroImage"
+      :heroClass="heroClass"
+      :titleChild="titleChild"
+      :subChild="subChild"
+      Buttonlabel="Discover More"
+      buttonClass="text-white bg-[#206695] px-5 py-3 mt-4 md:mr-3 rounded w-full sm:w-auto text-center"
+      childClass="text-[22px] sm:text-[28px] md:text-xl lg:text-[42px] text-center max-w-[90%] md:max-w-[700px] mx-auto font-bold text-white leading-tight"
+      SubchildClass="text-white md:w-[550px] text-center"
+    >
+    </Hero>
+  </section>
 </template>
 
 <script setup>
-import Hero from '@/components/Layouts/Hero.vue';
-import image from "@/assets/time.jpg";
-
-
+import Hero from '@/components/Layouts/Hero.vue'
+import image from '@/assets/time.jpg'
 
 defineProps({
-  image: {
+  heroClass: {
     type: String,
-   
+    default: 'min-w-full h-auto md:h-[60vh] object-cover',
   },
- heroClass: {
+ heroImage: {
     type: String,
-   default: 'min-w-full h-auto md:h-[60vh] object-cover',
+    default: '',
+  },
+  titleChild: {
+    type: String,
+    default: 'Make your business stand out with our personalized accounting services',
+  },
+  subChild: {
+    type: String,
+    default: 'We provide tailored financial solutions designed to support your company’s unique goals. From accurate bookkeeping to strategic financial advice, our team ensures your business stays compliant, efficient, and ready for growth.',
   },
 })
 </script>
