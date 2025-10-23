@@ -36,9 +36,10 @@
 
     <!-- ✅ Footer Section -->
     <footer class="bg-[#206695] text-white">
-      <section class="max-w-7xl mx-auto px-4 py-10">
+     
+      <section class="max-w-auto mx-auto px-4 py-10">
         <!-- Top Footer Content -->
-        <div class="flex flex-col md:flex-row justify-between gap-10">
+        <div class="flex flex-col md:flex-row ">
           <!-- Logo & Address -->
           <div class="md:w-1/3 space-y-3  md:text-left">
             <img class="w-32  md:mx-0" :src="defLogo" alt="logo" />
@@ -46,10 +47,11 @@
               Address: 20 Northwood Drive BT15 3QP
             </div>
           </div>
+          
           <!-- Footer Links -->
-          <div class="flex-1">
+          <div class="">
             <ul
-              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 text-sm  md:text-left"
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  text-sm  md:text-left"
             >
               <li v-for="(section, index) in footerSections" :key="index">
                 <h3 class="text-base font-bold mb-2">{{ section.title }}</h3>
@@ -88,6 +90,7 @@
 </template>
 
 <script setup>
+import container from "@/components/Layouts/container.vue";
 const phoneNumber = [
   {
     url: "+4407349146384",
@@ -132,7 +135,7 @@ const footerSections = [
     title: "Contact",
     links: [
       { text: "+4407349146384", url: "tel:+4407349146384" },
-      { text: "Info@defendnettechnology.com", url: "mailto:Info@defendnettechnology.com" },
+      { text: "Info@defendnettechnology", url: "mailto:Info@defendnettechnology.com" },
     ],
   },
 ];

@@ -5,7 +5,7 @@
           <div
             class="flex flex-col md:flex-row justify-center md:space-x-10 mt-[70px]"
           >
-            <div class="overflow-hidden md:w-[70vw] rounded">
+            <div class="overflow-hidden w-auto rounded">
               <img :src="manageImg" alt="business" class="" />
               <stat />
             </div>
