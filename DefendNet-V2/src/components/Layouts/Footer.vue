@@ -49,7 +49,7 @@
           <!-- Footer Links -->
           <div class="flex-1">
             <ul
-              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-sm  md:text-left"
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 text-sm  md:text-left"
             >
               <li v-for="(section, index) in footerSections" :key="index">
                 <h3 class="text-base font-bold mb-2">{{ section.title }}</h3>
