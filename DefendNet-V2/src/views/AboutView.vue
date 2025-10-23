@@ -4,7 +4,7 @@
       :heroImage="aboutHero"
       title="About Us"
       titleClass="text-white font-bold text-4xl"
-      titleChild="Navigating Financial Success Together"
+      titleChild="Trusted Financial and IT Audit"
       childClass="text-white font-light text-2xl  leading-relaxed"
       heroClass=" md:h-[70vh] min-w-screen overflow-hidden object-cover object-top "
       context="text-center flex flex-col item-center justify-center mx-auto h-64 md:h-99"
@@ -23,8 +23,7 @@
           The People Powering Our Innovation
         </h2>
         <p class="text-gray-400 text-center md:w-[500px]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, diam dapibus
-          rutrum metus bibendum placerat.
+          At the heart of our success is a passionate team of innovators, creators, and problem-solvers. Together, we turn ideas into impact pushing boundaries and shaping the future of technology.
         </p>
         <div
           class="bg-[#0BC575] h-[4px] md:h-1 my-4 rounded"

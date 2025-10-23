@@ -57,23 +57,23 @@ const details = [
   {
     id: 1,
     image: ten,
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit nam incidunt velit atque itaque perspiciatis corporis cum enim saepe!",
-    name: "john Doe",
-    postion: "Ceo",
+    title: "DefendNet transformed the way we handle IT compliance. Their audit team identified critical gaps we didn’t even know existed and helped us strengthen our cybersecurity posture.",
+    name: "Sarah M",
+    postion: " Compliance Director, Horizon Finance Ltd.",
   },
   {
     id: 2,
     image: four,
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit nam incidunt velit atque itaque perspiciatis corporis cum enim saepe!",
-    name: "john ",
-    postion: "Ceo",
+    title: "Cybersecurity is a top priority in healthcare, and DefendNet gave us complete confidence. Their team was thorough, transparent, and proactive throughout the audit process.",
+    name: "Dr. Daniel O. ",
+    postion: "IT Manager, MedSecure Clinics",
   },
   {
     id: 3,
     image: three,
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, suscipit nam incidunt velit atque itaque perspiciatis corporis cum enim saepe!",
-    name: "john Doe",
-    postion: "Ceo",
+    title: "As a growing tech company, we needed a partner who understood both innovation and security. DefendNet’s experts provided a full IT audit and guided us in building a scalable, secure infrastructure.",
+    name: "Lisa A.",
+    postion: "CEO, CloudWave Technologies",
   },
 ];
 </script>

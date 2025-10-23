@@ -4,7 +4,7 @@
       :heroImage="defendCareer"
       title="Career"
       titleClass="text-white font-bold text-4xl"
-      titleChild="Discover What Drives Business with DefendNet"
+      titleChild="Join a Team That Secures the Future"
       childClass="text-white font-light text-2xl  leading-relaxed"
       heroClass=" md:h-[70vh] min-w-screen overflow-hidden object-cover object-top"
       context="text-center flex flex-col item-center justify-center mx-auto h-64 md:h-99"
@@ -13,10 +13,10 @@
       <div class="border-b-[.5px] border-slate-100"></div>
     </Hero>
     <container>
-      <div class="text-[18px] md:text-2xl font-bold font-mono py-4 dark:text-white">
+      <div class="text-[14px] md:text-2xl font-bold font-sans py-4 dark:text-white h-64" >
         <div class="-translate-y-7 bg-black p-4 h-auto">
           <h1 class="py-3">Discover What Drives Business with DefendNet</h1>
-          <p class="font-light text-[18px] dark:text-white">
+          <p class="font-light md:text-[18px] dark:text-white">
             At DefendNet, auditing opens the door to some of the UK’s most exciting and influential
             organisations. To deliver real value, we delve into how companies operate how they earn
             revenue, control expenditure, and plan for the future. This means our team builds a
@@ -38,19 +38,19 @@
               today’s dynamic environment, and the proactive measures we’re taking to continuously
               improve and uphold the highest standards..
             </p>
-            <button class="bg-blue-500 px-4 py-4 rounded-full my-3 text-white">About Us</button>
+            <button class="bg-blue-400 px-4 py-4 rounded-full my-3 text-white">About Us</button>
           </div>
           <div>
             <span class="w-[60%]"><img :src="qualityDefend" alt="qualityDefend" /></span>
           </div>
         </div>
       </div>
-      <div class="mt-20">
+      <div class="mt-20 px-4 sm:px-6 lg:px-12">
         <div>
           <div>
             <div class="bg-blue-400 h-[6px] md:h-2 my-4 px-6" style="width: 48px"></div>
           </div>
-          <div class="flex flex-col md:flex-row gap-5">
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
             <div class="">
               <h1 class="font-mono text-xl py-3">Building Trust Through Transparent Auditing.</h1>
               <p class="pb-5">
@@ -68,11 +68,13 @@
               </p>
             </div>
             <div class="mb-12">
-              <img :src="defendNetJob" alt="defend-job" />
+              <img :src="defendNetJob"
+              class="md:w-full" 
+               alt="defend-job" />
             </div>
           </div>
 
-          <div class="flex flex-col-reverse md:flex-row gap-10">
+          <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
             <div>
               <img :src="DefendSecJob" alt="" class="md:w-[70vw]" />
             </div>

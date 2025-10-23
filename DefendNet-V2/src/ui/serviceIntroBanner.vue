@@ -73,7 +73,7 @@ const chooses = [
   {
     id: 4,
     text: "Cyber",
-    icon: "globe",
+    icon: "shield",
     child: "Comprehensive Risk Assessments Identify critical vulnerabilities, prioritize risks, and implement safeguards",
   },
 ];

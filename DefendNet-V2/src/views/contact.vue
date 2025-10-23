@@ -4,7 +4,7 @@
       :heroImage="DefendNetContact"
       title="Contact"
       titleClass="text-white font-bold text-4xl"
-      titleChild="Discover What Drives Business with DefendNet"
+      titleChild="Let’s Build a Secure Future Together"
       childClass="text-white font-light text-2xl  leading-relaxed"
       heroClass=" md:h-[70vh] min-w-screen overflow-hidden object-cover object-top"
       context="text-center flex flex-col item-center justify-center mx-auto h-64 md:h-99"

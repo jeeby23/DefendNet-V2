@@ -44,7 +44,7 @@
           <div class="md:w-1/3 space-y-3  md:text-left">
             <img class="w-32  md:mx-0" :src="defLogo" alt="logo" />
             <div class="text-gray-300 text-sm leading-relaxed">
-              Address: 20 Northwood Drive BT15 3QP
+            Address: 20 Northwood Drive BT15 3QP
             </div>
           </div>
           
@@ -104,14 +104,14 @@ const footerSections = [
   {
     title: "Services",
     links: [
-      { text: "Audit", url: "/audit" },
-      { text: "Cloud", url: "/cloud-security" },
-      { text: "Cyber Security", url: "/cybersecurity" },
-      { text: "Policy", url: "/policy-development" },
-      { text: "SOX", url: "/sox-compliance" },
-      { text: "IT Support", url: "/it-support" },
-      { text: "Third-Party", url: "/third-party-risk" },
-      { text: "Business", url: "/business-continuity" },
+      { text: "IT Auditing", url: "/audit" },
+      { text: "Cloud Security Adviosry", url: "/cloud-security" },
+      { text: "Cybersecurity Advisory", url: "/cybersecurity" },
+      { text: "Policy Development & Governance Advisory", url: "/policy-development" },
+      { text: "SOX Compliances Support", url: "/sox-compliance" },
+      { text: "IT Support & Operational Readiness", url: "/it-support" },
+      { text: "Third-Party Risk Assessment Strategy", url: "/third-party-risk" },
+      { text: "Business Continuity & Incident Management Advisory", url: "/business-continuity" },
     ],
   },
   {

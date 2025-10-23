@@ -4,8 +4,7 @@
       <div class="p-5">
         <h1>Send us a message</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ab
-          iste porro, veniam ipsa possimus?
+          We’d love to hear from you! Whether you have a question, need expert guidance, or want to learn more about our services, our team is ready to help. Fill out the form below and we’ll get back to you as soon as possible.
         </p>
         <div
           class="bg-[#0BC575] h-[4px] md:h-1 my-4 rounded"
@@ -25,7 +24,7 @@
               <BaseInput label="Phone" placeholder="Phone" />
             </span>
             <span>
-              <BaseInput label="Email" placeholer="Email" />
+              <BaseInput label="Email" placeholer="Email"/>
             </span>
           </div>
           <div>
