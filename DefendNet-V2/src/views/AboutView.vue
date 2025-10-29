@@ -13,11 +13,11 @@
       <div class="border-b-[.5px] border-slate-100"></div>
     </Hero>
     <aboutCard/>
-    <makeSection  :heroImage="businesAbout" heroClass="object-top h-[60vh] w-full object-cover" titleChild="Elevate your business with accounting services designed just for you." subChild="Our expert auditing and accounting solutions are tailored to meet your unique business needs. We go beyond the numbers to deliver clear insights, ensure compliance, and strengthen your financial foundation so you can focus on growth with confidence."/>
+    <makeSection  :heroImage="businesAbout" heroClass="object-top h-[60vh] w-full object-cover" titleChild="Elevate your business with auditing solutions tailored to your unique needs.." subChild="Our expert team ensures transparency, accuracy, and trust in every report—helping your organization grow with confidence."/>
     <div class="bg-[#FAFAFA]">
       <div class="flex flex-col justify-center items-center pt-10">
         <h1 class="text-[#206695] py-2 font-semibold">
-          Meet Our Expert Accounting Team
+          Meet Our Expert Auditing Team
         </h1>
         <h2 class="font-bold text-3xl py-4 text-center md:w-[400px] dark:text-black">
           The People Powering Our Innovation

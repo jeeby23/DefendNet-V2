@@ -69,7 +69,7 @@ const plans = [
      <aboutCard/>
       <div class="flex flex-col justify-center items-center mt-10">
         </div>
-     <makeSection image="time" :heroImage="time"/> 
+     <makeSection image="time" :heroImage="time" heroClass="object-top h-[60vh] w-full object-cover"/> 
      <serviceIntroBanner/>
      <Footer/>
     </main>

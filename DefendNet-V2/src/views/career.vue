@@ -13,10 +13,10 @@
       <div class="border-b-[.5px] border-slate-100"></div>
     </Hero>
     <container>
-      <div class="text-[14px] md:text-2xl font-bold font-sans py-4 dark:text-white h-64" >
+      <div class="text-[14px] md:text-2xl font-bold font-sans py-4 text-gray-400 dark:text-white h-auto" >
         <div class="-translate-y-7 bg-black p-4 h-auto">
           <h1 class="py-3">Discover What Drives Business with DefendNet</h1>
-          <p class="font-light md:text-[18px] dark:text-white">
+          <p class="font-light md:text-[18px] text-white">
             At DefendNet, auditing opens the door to some of the UK’s most exciting and influential
             organisations. To deliver real value, we delve into how companies operate how they earn
             revenue, control expenditure, and plan for the future. This means our team builds a
@@ -52,7 +52,7 @@
           </div>
           <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
             <div class="">
-              <h1 class="font-mono text-xl py-3">Building Trust Through Transparent Auditing.</h1>
+              <h1 class="font-mono md:text-xl py-3">Building Trust Through Transparent Auditing.</h1>
               <p class="pb-5">
                 At DefendNet, our Audit team plays a vital role in verifying the integrity of the
                 UK’s leading organisations. We examine financial reports, regulatory disclosures,
@@ -80,7 +80,7 @@
             </div>
             <div>
               <div class="bg-blue-400 h-[6px] md:h-2 my-4 px-6" style="width: 48px"></div>
-              <h1 class="font-mono text-2xl py-3">Driven by Expertise, Enhanced by Technology.</h1>
+              <h1 class="font-mono md:text-2xl py-3">Driven by Expertise, Enhanced by Technology.</h1>
               <p>
                 At DefendNet, we harness cutting-edge technology to elevate every aspect of our
                 audit services. As innovation reshapes the industry, we remain at the
